@@ -1,0 +1,36 @@
+print('Welcome to the Covid Triage Program.')
+print() #empty print line for readability
+print('The following questions are for security measures.')
+print() #empty print line for readability
+print('What is your full name? ')
+input()
+print() #empty print line for readability
+print('What is your birth year? ')
+birth_year = int(input ())
+age = 2023 - birth_year
+print() #empty print line for readability
+print('You are', age, '.')
+print('Is this correct? ')
+answer_1 = input()
+if answer_1 == 'Yes': #lines following 'if' will be further in by 1 spacing
+  print() #empty print line for readability
+  print ('About you symptoms:')
+  print() #empty print line for readability
+  print('Do you have a cough? ') 
+  answer_a = input()
+  if answer_a == 'Yes': #'if' line will be in same position as code under above 'if'
+    print() #empty print line for readability
+    print('You are likely to have Covid-19.')
+    print('We have logged your information and will be in touch soon')
+  else: #'else' will be aligned with 'if', lines will be positioned further in by 1 spacing
+    print() #empty print line for readability
+    print('Do you have a high temperature? ')
+    answer_b = input()
+    if answer_b == 'Yes':
+      print() #empty print line for readability
+      print('You are likely to have Covid-19.')
+      print('We have logged your information and will be in touch soon.')
+    else:
+      print('You are unlikely to have Covid 19.')
+print() #empty print line for readability
+print('Thank you for using the Covid Triage Program.')
